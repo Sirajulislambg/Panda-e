@@ -10,10 +10,12 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="" />
@@ -35,27 +37,27 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#Shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#Backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- slider start -->
-      <section class="mt-5">
+      <section class="mt-5 ">
         <div
           id="carouselExampleControls"
           class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active bg-info border rounded p-5">
+            <div class="carousel-item active panda-bg-info borderg- rounded p-5">
               <div class="row">
                 <div class="col-lg-7 d-flex align-items-center ps-5">
                   <div>
@@ -79,7 +81,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item active bg-info border rounded p-5">
+            <div class="carousel-item active panda-bg-info border rounded p-5">
               <div class="row">
                 <div class="col-lg-7 d-flex align-items-center ps-5">
                   <div>
@@ -103,7 +105,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item active bg-info border rounded p-5">
+            <div class="carousel-item active panda-bg-info border rounded p-5">
               <div class="row">
                 <div class="col-lg-7 d-flex align-items-center ps-5">
                   <div>
@@ -115,7 +117,7 @@
                       amet.
                     </p>
                     <h1>$600</h1>
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                   </div>
                 </div>
                 <div class="col-lg-5">
@@ -190,7 +192,7 @@
       </section>
       <!-- categories end  -->
       <!-- Shoes section start -->
-      <section class="container">
+      <section class="container" id="Shoes">
         <h1>Shoes</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
           <div class="col">
@@ -210,7 +212,7 @@
               </div>
               <div class="m-3">
                 <h3 class="my-3">$600</h3>
-                <div class="btn btn-warning">Buy Now</div>
+                <div class="btn panda-btn-buy-now">Buy Now</div>
               </div>
             </div>
           </div>
@@ -230,7 +232,7 @@
               </div>
               <div class="m-3">
                 <h3 class="my-3">$500</h3>
-                <div class="btn btn-warning">Buy Now</div>
+                <div class="btn panda-btn-buy-now">Buy Now</div>
               </div>
             </div>
           </div>
@@ -251,7 +253,7 @@
               </div>
               <div class="m-3">
                 <h3 class="my-3">$800</h3>
-                <div class="btn btn-warning">Buy Now</div>
+                <div class="btn panda-btn-buy-now">Buy Now</div>
               </div>
             </div>
           </div>
@@ -259,7 +261,7 @@
       </section>
       <!-- Shoes section end -->
       <!-- Backpack section start -->
-      <section class="container">
+      <section class="container" id="Backpack">
         <h1>Backpacks</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
           <div class="col">
@@ -275,7 +277,7 @@
               </div>
               <div class="m-3">
                 <h3 class="my-3">$1600</h3>
-                <div class="btn btn-warning">Buy Now</div>
+                <div class="btn panda-btn-buy-now">Buy Now</div>
               </div>
             </div>
           </div>
@@ -291,7 +293,7 @@
               </div>
               <div class="m-3">
                 <h3 class="my-3">$1000</h3>
-                <div class="btn btn-warning">Buy Now</div>
+                <div class="btn panda-btn-buy-now">Buy Now</div>
               </div>
             </div>
           </div>
@@ -308,14 +310,37 @@
               </div>
               <div class="m-3">
                 <h3 class="my-3">$1100</h3>
-                <div class="btn btn-warning">Buy Now</div>
+                <div class="btn panda-btn-buy-now">Buy Now</div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Backpack section end -->
+      <!-- subscribe section start -->
+      <section style="height: 350px;" class="container d-flex justify-content-center align-items-center panda-bg-info rounded-3 my-5" id="subscribe">
+        <div >
+          <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+        <form>
+          <div class="mb-3">
+           
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+        
+          <button type="submit" class="btn panda-btn-buy-now">Submit</button>
+        </form>
+        </div>
+      </section>
+      <!-- subscribe section end -->
     </main>
+    <footer class="container text-center">
+      <p><small>@2023. Panda Commerce .All rights reserved .Sofia,Bulgaria.</small></p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
